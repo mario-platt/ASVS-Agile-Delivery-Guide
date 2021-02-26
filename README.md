@@ -51,20 +51,20 @@ Then only allow UTF-8 or ISO-8859-1\
 
 **Chef Inspec**
 
-control 'HTTP Header - Content type' do                        # A unique ID for this control
-  impact 0.7                                # The criticality, if this control fails.
-  title 'Safe character set'             # A human-readable title
-  desc 'HTTP response contains content type header with safe character set'
-  tag 'ASVS-14.4.1'
-  tag 'ISO27001-14.1.2'
-  describe http('http://192.168.0.6:3000') do                  # The actual test
-    its('headers.Content-type') { should cmp 'text/html; charset=utf-8' }
-  end
-end
+control 'HTTP Header - Content type' do                        # A unique ID for this control\
+  impact 0.7                                # The criticality, if this control fails.\
+  title 'Safe character set'             # A human-readable title\
+  desc 'HTTP response contains content type header with safe character set'\
+  tag 'ASVS-14.4.1'\
+  tag 'ISO27001-14.1.2'\
+  describe http('http://192.168.0.6:3000') do                  # The actual test\
+    its('headers.Content-type') { should cmp 'text/html; charset=utf-8' }\
+  end\
+end\
 
 **OPA**
 
 TBC
 
 **External link**
-<URL>
+insert URL
