@@ -39,7 +39,7 @@ TBC
 
 TBC
 
-**External link**
+**External link**\
 https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html
 https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 https://cwe.mitre.org/data/definitions/419

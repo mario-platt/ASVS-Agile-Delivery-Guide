@@ -10,7 +10,7 @@ Verify that all application components use the same encodings and parsers to avo
 **Story**:\
 As a Security Engineer\
 I want to use consistent encodings and parsers\
-So that I can avoid parsing attacks that exploit different behaviour that could be used in RFI and SSRF attacks\
+So that I can avoid parsing attacks that exploit different behaviour that could be used in RFI and SSRF attacks
 
 ## Scenario
 **Scenario_name**: Standardised encodings
@@ -40,7 +40,7 @@ TBC
 
 TBC
 
-**External link**
+**External link**\
 https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html
 https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 https://cwe.mitre.org/data/definitions/116
