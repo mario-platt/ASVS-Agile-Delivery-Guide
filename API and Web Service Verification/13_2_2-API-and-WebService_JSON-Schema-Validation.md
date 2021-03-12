@@ -21,6 +21,8 @@ Given functions processing externally provided inputs
 When I parse or encode such inputs
 Then I use an `input validation framework` to reduce exposure to parsing-related threats
 ```
+Relevant `input validation frameworks` could be Struts or OWASP ESAPI Validation API
+
 **Scenario_name**: Input conformance to specifications
 
 **Gherkin syntax**:
