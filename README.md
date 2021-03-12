@@ -41,12 +41,13 @@ So that I can prevent obfuscation attacks that could hide malicious input\
 ## Scenario
 **Scenario_name**: Specify allowed character sets
 
-**Gherkin syntax**:\
-Given an HTTP response\
-And an HTTP Security header\
-When specifying allowable character sets\
+**Gherkin syntax**:
+```gherkin
+Given an HTTP response
+And an HTTP Security header
+When specifying allowable character sets
 Then only allow UTF-8 or ISO-8859-1
-
+```
 ## Validations
 
 **Chef Inspec**
