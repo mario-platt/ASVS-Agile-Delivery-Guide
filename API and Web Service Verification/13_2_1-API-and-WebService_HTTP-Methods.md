@@ -26,8 +26,8 @@ Then it is not performing any changes in application state
 
 **Gherkin syntax**:
 ```gherkin
-Given the creation of a new function\
-When I use HTTP methods\
+Given the creation of a new function
+When I use HTTP methods
 Then I restrict restrict it to only the required methods for the operation being handled
 ```
 
