@@ -16,11 +16,12 @@ So that I can ensure access to resources is controlled and protected
 **Scenario_name**: Ensure GET method isn't used to modify state of application
 
 **Gherkin syntax**:\
+```gherkin
 Given the use of an HTTP method\
 And as HTTP GET is used\
 When I determine the related operation being performed\
 Then it is not performing any changes in application state
-
+```
 **Scenario_name**: Validate all used HTTP methods are restricted to the scope of the function
 
 **Gherkin syntax**:\
