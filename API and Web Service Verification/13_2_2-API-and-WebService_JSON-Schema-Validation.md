@@ -50,7 +50,7 @@ Then I convert input into the expected data type
 And that input value is within an expected range of allowable values
 ```
 
-**Scenario_name**: Conversion of input type to expected data type
+**Scenario_name**: Consistent character encoding
 
 **Gherkin syntax**:
 ```gherkin
