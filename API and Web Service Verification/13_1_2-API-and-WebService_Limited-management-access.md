@@ -15,18 +15,20 @@ So that I can protect my system against unauthorised access attempts
 ## Scenario
 **Scenario_name**: Unexposed admin functionality on UI
 
-**Gherkin syntax**:\
+**Gherkin syntax**:
+```gherkin
 Given a business need to expose an administrative endpoint\
 When I wish to perform administrative functions\
 Then I provide a separate endpoint which has further access restrictions to protect this functionality from being maliciously accessed
-
+```
 **Scenario_name**: Protection of administrative interface
 
-**Gherkin syntax**:\
+**Gherkin syntax**:
+```gherkin
 Given a business need to expose an administrative endpoint\
 When I wish to perform administrative functions\
 Then I use `strong mechanisms` for authentication and authorisation
-
+```
 `strong mechanisms` can entail Multi-factor authentication, or mechanisms akin to 'sudo' to provide individual authorisation for critical tasks
 
 ## Validations

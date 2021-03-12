@@ -15,20 +15,22 @@ So that I can avoid parsing attacks that exploit different behaviour that could 
 ## Scenario
 **Scenario_name**: Standardised encodings
 
-**Gherkin syntax**:\
+**Gherkin syntax**:
+```gherkin
 Given a need to encode or escape content\
 And send it to different services\
 When I choose a library or framework\
 Then I vet the library or framework exposure to this weakness
-
+```
 **Scenario_name**: Parameterization of queries
 
-**Gherkin syntax**:\
+**Gherkin syntax**:
+```gherkin
 Given a need to encode or escape content\
 And send it to different services\
 When I need to perform queries\
 Then I use stored procedures or similar to reduce reliance on manual validations
-
+```
 
 ## Validations
 

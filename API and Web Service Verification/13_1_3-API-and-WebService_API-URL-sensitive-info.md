@@ -15,11 +15,12 @@ So that I can protect this information from unauthorised disclosure
 ## Scenario
 **Scenario_name**: Use POST method to transmit sensitive information
 
-**Gherkin syntax**:\
+**Gherkin syntax**:
+```gherkin
 Given a need to process `sensitive information` which could expose access credentials\
 When I transmit this `sensitive information`\
 Then I use a POST method so this information isn't exposed in URLs
-
+```
 `sensitive information` can include API keys, Session Tokens, username and password pairs, etc
 
 ## Validations
