@@ -33,7 +33,7 @@ Verify that every HTTP response contains a Content-Type header. text/*, /+xml an
 ## User Story
 **Feature_Name**: HTTP Response content type header specifies safe character set
 
-**Story**:
+**Story**:\
 As a Security Engineer\
 I want to allow safe character sets only in HTTP responses\
 So that I can prevent obfuscation attacks that could hide malicious input\
@@ -45,12 +45,13 @@ So that I can prevent obfuscation attacks that could hide malicious input\
 Given an HTTP response\
 And an HTTP Security header\
 When specifying allowable character sets\
-Then only allow UTF-8 or ISO-8859-1\
+Then only allow UTF-8 or ISO-8859-1
 
 ## Validations
 
 **Chef Inspec**
 
+```ruby
 control 'HTTP Header - Content type' do                        # A unique ID for this control\
   impact 0.7                                # The criticality, if this control fails.\
   title 'Safe character set'             # A human-readable title\
@@ -61,6 +62,7 @@ control 'HTTP Header - Content type' do                        # A unique ID for
     its('headers.Content-type') { should cmp 'text/html; charset=utf-8' }\
   end\
 end\
+```
 
 **OPA**
 
