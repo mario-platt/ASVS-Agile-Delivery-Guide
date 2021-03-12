@@ -16,16 +16,16 @@ So that I can ensure access to resources is controlled and protected
 **Scenario_name**: Ensure GET method isn't used to modify state of application
 
 **Gherkin syntax**:\
-Given the use of an HTTP method
-And as HTTP GET is used
-When I determine the related operation being performed
+Given the use of an HTTP method\
+And as HTTP GET is used\
+When I determine the related operation being performed\
 Then it is not performing any changes in application state
 
 **Scenario_name**: Validate all used HTTP methods are restricted to the scope of the function
 
 **Gherkin syntax**:\
-Given the creation of a new function
-When I use HTTP methods
+Given the creation of a new function\
+When I use HTTP methods\
 Then I restrict restrict it to only the required methods for the operation being handled
 
 
@@ -44,7 +44,7 @@ TBC
 TBC
 
 **External link**\
-https://cheatsheetseries.owasp.org/cheatsheets/REST_Assessment_Cheat_Sheet.html
-https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
-https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+https://cheatsheetseries.owasp.org/cheatsheets/REST_Assessment_Cheat_Sheet.html\
+https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html\
+https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html\
 https://cwe.mitre.org/data/definitions/650
