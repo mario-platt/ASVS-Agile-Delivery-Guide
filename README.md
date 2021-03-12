@@ -41,7 +41,7 @@ So that I can prevent obfuscation attacks that could hide malicious input\
 ## Scenario
 **Scenario_name**: Specify allowed character sets
 
-**Gherkin syntax**:
+**Gherkin syntax**:\
 Given an HTTP response\
 And an HTTP Security header\
 When specifying allowable character sets\
