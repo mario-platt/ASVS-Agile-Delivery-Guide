@@ -28,7 +28,7 @@ This is done through checking `<link rel=` or `<script src=` statements and veri
 
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" integrity="sha256-8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU= sha512-/5KWJw2mvMO2ZM5fndVxUQmpVPqaxZyYRTMrXtrprsyQ2zM0o0NMjU02I8ZJXeBP trmrPO4IAyCCRsydG0BJoQ==" crossorigin="anonymous">
-`
+```
 
 ## Validations
 
