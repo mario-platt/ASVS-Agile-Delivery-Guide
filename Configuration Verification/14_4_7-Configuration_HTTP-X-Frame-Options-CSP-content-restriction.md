@@ -9,7 +9,7 @@ Verify that a suitable X-Frame-Options or Content-Security-Policy: frame-ancesto
 
 **Story**:
 As a Security Engineer\
-I want to restrict where content can be embedded from
+I want to restrict where content can be embedded from\
 So that I can have control over which 3rd parties can embedded content I produce
 
 ## Scenario
