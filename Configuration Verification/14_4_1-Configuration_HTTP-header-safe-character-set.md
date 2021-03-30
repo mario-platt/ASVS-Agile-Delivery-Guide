@@ -63,6 +63,6 @@ TBC
 
 TBC
 
-**External link**\
+**External link**
 https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
 https://cwe.mitre.org/data/definitions/173

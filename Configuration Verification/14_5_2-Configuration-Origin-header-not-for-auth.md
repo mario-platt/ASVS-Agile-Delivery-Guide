@@ -5,22 +5,22 @@
 Verify that the supplied Origin header is not used for authentication or access control decisions, as the Origin header can easily be changed by an attacker.
 
 ## User Story
-**Feature_Name**: HTTP method restriction
+**Feature_Name**: Origin header not used for auth/access control
 
 **Story**:
 As a Security Engineer\
-I want to restrict the HTTP methods available\
-So that I can reduce the attack surface of my application
+I want to verify that Origin header isn't used for authentication or access control purposes
+So that an attacker can't easily use this route to gain unauthorised access to my application
 
 ## Scenario
-**Scenario_name**: Ensure X-Frame-Options header is enabled in all HTTP responses
+**Scenario_name**: No auth/access control decisions made using Origin headers
 
 **Gherkin syntax**:
 ```gherkin
 	Given an HTTP request
-	And an HTTP method being used
-	When I receive an HTTP response
-	Then the HTTP status code isn't 4XX or 5XX
+	And an Origin header being present
+	When I receive the Origin header
+	Then I don't use it for authentication or access control purposes
 ```
 
 
@@ -38,5 +38,5 @@ TBC
 TBC
 
 **External link**
-https://cwe.mitre.org/data/definitions/749
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+https://cwe.mitre.org/data/definitions/346
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin
