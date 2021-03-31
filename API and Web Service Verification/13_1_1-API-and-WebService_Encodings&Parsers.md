@@ -19,8 +19,8 @@ So that I can avoid parsing attacks that exploit different behaviour that could 
 ```gherkin
 Given a need to encode or escape content
 And send it to different services
-When I choose a library or framework
-Then I vet the library or framework exposure to this weakness
+When I choose a library or framework for encoding or parsing
+Then I ensure consistent use of libraries or frameworks
 ```
 **Scenario_name**: Parameterization of queries
 

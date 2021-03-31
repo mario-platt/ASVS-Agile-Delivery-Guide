@@ -5,12 +5,12 @@
 Verify that frameworks protect against mass parameter assignment attacks, or that the application has countermeasures to protect against unsafe parameter assignment, such as marking fields private or similar.
 
 ## User Story
-**Feature_Name**: HTTP parameter validation against pollution attacks
+**Feature_Name**: Protection against mass parameter assignment attacks
 
 **Story**:
 As a Security Engineer\
-I want to confirm app behaviour when multiple parameters exist with the same name
-So that I detect and manage any behaviour that could lead to incorrect sanitisation of input
+I want to use frameworks that protect against mass parameter assignment attacks
+So that I can protect those elements and ensure expected application behavior
 
 ## Scenario
 **Scenario_name**: Specify what's allowed to be modified
