@@ -23,7 +23,7 @@ When I define the required objects in code
 Then I create a mapping between fixed input values to the actual filenames or URLs
 And I reject all other inputs
 ```
-When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to /login.asp and ID 2 could map to http://www.example.com/. Features such as the ESAPI AccessReferenceMap [REF45] provide this capability.
+"When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to /login.asp and ID 2 could map to http://www.example.com/. Features such as the ESAPI AccessReferenceMap [REF45] provide this capability." from `SKF`
 
 **Scenario_name**: Notify user of external redirect
 
