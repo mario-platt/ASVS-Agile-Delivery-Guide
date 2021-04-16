@@ -20,7 +20,8 @@ So that I strictly control the effects of inputs into my application
 ```gherkin
 Given a need to encode or escape content
 And send it to different services
-Then I clearly define define which encodings I support
+When I validate supported encodings
+Then I clearly define which encodings I support
 And I ensure all others aren't accepted
 And I provide a notification informative of this rejection
 ```
