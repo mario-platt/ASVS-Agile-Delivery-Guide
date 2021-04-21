@@ -1,5 +1,5 @@
 ## ASVS Requirement: V2.1.1
-## ASVS:14.2.1
+## ASVS:2.1.1
 
 ## ASVS Requirement description
 Verify that user set passwords are at least 8 characters in length (after multiple spaces are combined)
