@@ -1,10 +1,13 @@
-## ASVS Requirement: V14.4.7 Verify HTTP X-Frame-Options or CSP frame-ancestors restrict content from being embedded in 3rd party sites
+# ASVS Requirement: V14.4.7 Verify HTTP X-Frame-Options or CSP frame-ancestors restrict content from being embedded in 3rd party sites
+
 ## ASVS:14.4.7
 
 ## ASVS Requirement description
+
 Verify that a suitable X-Frame-Options or Content-Security-Policy: frame-ancestors header is in use for sites where content should not be embedded in a third-party site.
 
 ## User Story
+
 **Feature_Name**: Restrict content from being embedded in 3rd party sites
 
 **Story**:
@@ -13,19 +16,22 @@ I want to restrict where content can be embedded from\
 So that I can have control over which 3rd parties can embedded content I produce
 
 ## Scenario
+
 **Scenario_name**: Ensure X-Frame-Options header is enabled in all HTTP responses
 
 **Gherkin syntax**:
+
 ```gherkin
-	Given an HTTP response
-	And an HTTP Security header
-	When confirming existing HTTP headers
-	Then X-Frame-Options header is defined
+ Given an HTTP response
+ And an HTTP Security header
+ When confirming existing HTTP headers
+ Then X-Frame-Options header is defined
 ```
 
 **Scenario_name**: Ensure X-Frame-Options header is appropriately configured
 
 **Gherkin syntax**:
+
 ```gherkin
     Given an HTTP response
     And an HTTP Security header
@@ -33,19 +39,22 @@ So that I can have control over which 3rd parties can embedded content I produce
     Then X-Frame-Options exists
     And is configured for allowing same origin
 ```
+
 **Scenario_name**: Ensure Content-Security-Policy header and frame-ancestors directive is enabled in all HTTP responses
 
 **Gherkin syntax**:
+
 ```gherkin
-	Given an HTTP response
-	And an HTTP Security header
-	When confirming existing HTTP headers
-	Then Content-Security-Policy header is defined
+ Given an HTTP response
+ And an HTTP Security header
+ When confirming existing HTTP headers
+ Then Content-Security-Policy header is defined
 ```
 
 **Scenario_name**: Ensure Content-Security-Policy header and frame-ancestors directive is appropriately configured
 
 **Gherkin syntax**:
+
 ```gherkin
     Given an HTTP response
     And an HTTP Security header
@@ -60,7 +69,7 @@ You should consider and have done the assesment on the mode and solution you nee
 
 ## Validations
 
-**Chef Inspec**
+### Chef Inspec
 
 ```ruby
 control 'HTTP Header - X-Frame-Options' do                        # A unique ID for this control
@@ -100,6 +109,7 @@ control 'HTTP Header - CSP with frame-ancestors' do                        # A u
   end
 end
 ```
+
 **OPA**
 
 TBC
@@ -108,8 +118,9 @@ TBC
 
 TBC
 
-**External link**
-https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
-https://cwe.mitre.org/data/definitions/346
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
+## External links
+
+<https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html>
+<https://cwe.mitre.org/data/definitions/346>
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options>
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors>

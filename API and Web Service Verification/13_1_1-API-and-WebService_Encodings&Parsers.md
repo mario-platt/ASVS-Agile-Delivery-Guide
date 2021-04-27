@@ -1,10 +1,13 @@
-## ASVS Requirement: V13.1.1 Use same encoders and parsers
+# ASVS Requirement: V13.1.1 Use same encoders and parsers
+
 ## ASVS:13.1.1
 
 ## ASVS Requirement description
+
 Verify that all application components use the same encodings and parsers to avoid parsing attacks that exploit different URI or file parsing behavior that could be used in SSRF and RFI attacks.
 
 ## User Story
+
 **Feature_Name**: Standardised encodings and parsers
 
 **Story**:\
@@ -13,18 +16,22 @@ I want to use consistent encodings and parsers\
 So that I can avoid parsing attacks that exploit different behaviour that could be used in RFI and SSRF attacks
 
 ## Scenario
+
 **Scenario_name**: Standardised encodings
 
 **Gherkin syntax**:
+
 ```gherkin
 Given a need to encode or escape content
 And send it to different services
 When I choose a library or framework for encoding or parsing
 Then I ensure consistent use of libraries or frameworks
 ```
+
 **Scenario_name**: Parameterization of queries
 
 **Gherkin syntax**:
+
 ```gherkin
 Given a need to encode or escape content
 And send it to different services
@@ -46,7 +53,8 @@ TBC
 
 TBC
 
-**External link**\
-https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html
-https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
-https://cwe.mitre.org/data/definitions/116
+## External links
+
+<https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html>
+<https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html>
+<https://cwe.mitre.org/data/definitions/116>
