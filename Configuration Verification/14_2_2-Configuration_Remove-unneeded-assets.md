@@ -1,10 +1,13 @@
-## ASVS Requirement: V14.2.2 Unneeded assets removed
+# ASVS Requirement: V14.2.2 Unneeded assets removed
+
 ## ASVS:14.2.2
 
 ## ASVS Requirement description
+
 Verify that all unneeded features, documentation, samples, configurations are removed, such as sample applications, platform documentation, and default or example users.
 
 ## User Story
+
 **Feature_Name**: Ensure only required artefacts in the production environment are deployed
 
 **Story**:
@@ -13,9 +16,11 @@ I want to ensure that I identity and remove any *artefacts* that aren’t requir
 So that I can reduce the attack surface of my application
 
 ## Scenario
+
 **Scenario_name**: Ensure there are no unnecessary *artefacts* in my production environment
 
 **Gherkin syntax**:
+
 ```gherkin
 Given a build and deployment process
 When I deploy my application in UAT or Production environment
@@ -38,7 +43,8 @@ TBC
 
 TBC
 
-**External link**\
-https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html \
-https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html \
-https://cwe.mitre.org/data/definitions/531
+## External links
+
+<https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html> \
+<https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html> \
+<https://cwe.mitre.org/data/definitions/531>

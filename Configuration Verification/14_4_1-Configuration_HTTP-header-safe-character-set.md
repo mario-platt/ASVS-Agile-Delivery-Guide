@@ -1,10 +1,13 @@
-## ASVS Requirement: V14.4.1 HTTP Content type header specifies safe character set
+# ASVS Requirement: V14.4.1 HTTP Content type header specifies safe character set
+
 ## ASVS:14.4.1
 
 ## ASVS Requirement description
+
 Verify that every HTTP response contains a content type header specifying a safe character set (e.g., UTF-8, ISO 8859-1).
 
 ## User Story
+
 **Feature_Name**: HTTP response content type header specifies safe character set
 
 **Story**:
@@ -13,9 +16,11 @@ I want to allow only safe character sets in HTTP responses
 So that I can prevent unsafe character sets which could obfuscate malicious activity
 
 ## Scenario
+
 **Scenario_name**: Specify allowed character sets
 
 **Gherkin syntax**:
+
 ```gherkin
 Given an HTTP response
 And an HTTP Security header
@@ -29,7 +34,7 @@ This would entail expecting the following in HTTP headers
 
 ## Validations
 
-**Chef Inspec**
+### Chef Inspec
 
 ```ruby
 control 'HTTP Header - Content type' do                        # A unique ID for this control
@@ -63,6 +68,7 @@ TBC
 
 TBC
 
-**External link**
-https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
-https://cwe.mitre.org/data/definitions/173
+## External links
+
+<https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html>
+<https://cwe.mitre.org/data/definitions/173>

@@ -1,10 +1,13 @@
-## ASVS Requirement: V14.2.3 Assets Hosting and Subresource integrity
+# ASVS Requirement: V14.2.3 Assets Hosting and Subresource integrity
+
 ## ASVS:14.2.3
 
 ## ASVS Requirement description
+
 Verify that if application assets, such as JavaScript libraries, CSS stylesheets or web fonts, are hosted externally on a content delivery network (CDN) or external provider, Subresource Integrity (SRI) is used to validate the integrity of the asset.
 
 ## User Story
+
 **Feature_Name**: Validated hashes of external dependencies
 
 **Story**:
@@ -13,9 +16,11 @@ I want to ensure that when I perform integrity checks against the hashes of any 
 So that I confirm that the packages I tested are used and weren't altered
 
 ## Scenario
+
 **Scenario_name**: Check all externally downloaded assets are verified with sub-resource integrity
 
 **Gherkin syntax**:
+
 ```gherkin
 Given an `asset` in my application hosted externally
 When I declare the asset in my scripts and links
@@ -44,5 +49,6 @@ TBC
 
 TBC
 
-**External link**\
-https://cwe.mitre.org/data/definitions/15
+## External links
+
+<https://cwe.mitre.org/data/definitions/15>
